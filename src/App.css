@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Search */
+
+.search-box {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 65px;
+  border: none;
+  outline: none;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 0 55px 0 22px;
+  font-size: 17px;
+  color: #333;
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+.search-icon {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #888;
+}
+
+/* Person card */
+
+.person-card {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 12px;
+  border-bottom: 1px solid #eeeeee;
+  transition: background 0.2s ease;
+}
+
+.person-card:hover {
+  background: #fafafa;
+}
+
+.profile-image {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.person-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.person-info h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #292929;
+  margin-bottom: 7px;
+}
+
+.person-info p {
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.person-right {
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.time {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.status {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #35b878;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 20px 12px;
+  }
+
+  .chat-container {
+    padding: 18px;
+  }
+
+  .person-card {
+    gap: 12px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .chat-container {
+    padding: 12px;
+  }
+
+  .profile-image {
+    width: 52px;
+    height: 52px;
+  }
+
+  .person-info h2 {
+    font-size: 16px;
+  }
+
+  .person-info p {
+    font-size: 12px;
+  }
+
+  .person-right {
+    width: 45px;
+  }
+
+  .time {
+    font-size: 11px;
+  }
+}
