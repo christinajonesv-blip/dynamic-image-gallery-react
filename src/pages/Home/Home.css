@@ -1,0 +1,506 @@
+.wanderlust-page {
+  min-height: 100vh;
+  background: #faf7ef;
+  color: #27332c;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 76px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #faf7ef;
+  border-bottom: 1px solid #e5e2d9;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #7c8c73;
+  border-radius: 50%;
+  color: #596d52;
+  font-size: 17px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo span {
+  display: block;
+  margin-top: 2px;
+  color: #8b9189;
+  font-size: 7px;
+  letter-spacing: 2px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar nav a {
+  color: #687069;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #3f593d;
+}
+
+.heart {
+  color: #b6787b;
+  font-size: 14px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-icon {
+  border: none;
+  background: transparent;
+  color: #59635c;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-explore {
+  padding: 10px 17px;
+  border: none;
+  border-radius: 25px;
+  background: #52694c;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav-explore:hover {
+  background: #3f563a;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  position: relative;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(28, 37, 30, 0.7),
+      rgba(28, 37, 30, 0.25),
+      rgba(28, 37, 30, 0.08)
+    ),
+    url("/src/assets/images/japan-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: white;
+}
+
+.hero-small {
+  margin-bottom: 24px;
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.hero-description {
+  margin: 24px 0;
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #344235;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hero-button span {
+  font-size: 17px;
+}
+
+.hero-button:hover {
+  gap: 25px;
+  transform: translateY(-2px);
+}
+
+/* JAPAN FEATURE */
+
+.japan-section {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 55px;
+  align-items: center;
+  background: #f8f5ed;
+}
+
+.featured-label {
+  margin-bottom: 15px;
+  color: #9a7774;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+}
+
+.japan-intro h2 {
+  margin: 0;
+  color: #26352b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.japan-season {
+  margin: 6px 0;
+  color: #a46d70;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.japan-tagline {
+  margin: 16px 0;
+  color: #626b63;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.japan-links {
+  margin: 25px 0;
+  color: #69716b;
+  font-size: 11px;
+}
+
+.japan-links span {
+  margin: 0 9px;
+  color: #b47c7e;
+}
+
+.japan-button {
+  padding: 11px 17px;
+  border: 1px solid #64785e;
+  border-radius: 25px;
+  background: transparent;
+  color: #4d6149;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.japan-button span {
+  margin-left: 10px;
+}
+
+.japan-button:hover {
+  background: #52694c;
+  color: white;
+}
+
+.japan-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.japan-mini-card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.japan-mini-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.japan-mini-card:hover img {
+  transform: scale(1.06);
+}
+
+.mini-card-content {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 22px;
+  color: white;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+.mini-card-content h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.mini-card-content h3 span {
+  margin-right: 7px;
+  color: #f3d8d8;
+  font-size: 8px;
+}
+
+.mini-card-content p {
+  margin: 5px 0 0;
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+/* GALLERY */
+
+.gallery-section {
+  padding: 85px 8%;
+  background: #fbf9f3;
+}
+
+.gallery-title p {
+  margin-bottom: 13px;
+  color: #73806e;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.gallery-title h2 {
+  margin: 0;
+  color: #29352d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.gallery-tools {
+  margin: 42px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1px solid #deddd4;
+  border-radius: 30px;
+  background: white;
+}
+
+.search-container span {
+  color: #788078;
+  font-size: 18px;
+}
+
+.search-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #4c554e;
+  font-size: 11px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-buttons button {
+  padding: 8px 14px;
+  border: 1px solid #d9d9d0;
+  border-radius: 20px;
+  background: transparent;
+  color: #6c746d;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.selected {
+  border-color: #52694c;
+  background: #52694c;
+  color: white;
+}
+
+/* DESTINATION GRID */
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* QUOTE */
+
+.quote-card {
+  margin-top: 50px;
+  padding: 45px 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: #e9e6dc;
+}
+
+.quote-card > span {
+  color: #687b61;
+  font-size: 20px;
+}
+
+.quote-card p {
+  margin: 12px 0;
+  color: #3e4a42;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.quote-card small {
+  color: #9a9d96;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .navbar nav {
+    gap: 16px;
+  }
+
+  .japan-section {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .hero {
+    min-height: 540px;
+    padding: 55px 7%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .japan-section,
+  .gallery-section {
+    padding: 60px 6%;
+  }
+
+  .japan-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-title h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar nav a {
+    font-size: 10px;
+  }
+
+  .heart {
+    display: none;
+  }
+
+  .nav-explore {
+    padding: 9px 12px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+}
