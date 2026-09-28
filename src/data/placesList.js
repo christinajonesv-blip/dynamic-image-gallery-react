@@ -1,3 +1,14 @@
+import kyoto from "../assets/images/kyoto.jpg";
+import mountFuji from "../assets/images/mount-fuji.jpg";
+import santorini from "../assets/images/santorini.jpg";
+import swissAlps from "../assets/images/swiss-alps.jpg";
+import paris from "../assets/images/paris.jpg";
+import bali from "../assets/images/bali.jpg";
+import cappadocia from "../assets/images/cappadocia.jpg";
+import newYork from "../assets/images/new-york.jpg";
+import machuPicchu from "../assets/images/machu-picchu.jpg";
+import amalfiCoast from "../assets/images/amalfi-coast.jpg";
+
 const places = [
   {
     id: 1,
@@ -5,7 +16,7 @@ const places = [
     country: "Japan",
     category: "Cherry Blossom",
     season: "Mar — Apr",
-    image: "/src/assets/images/kyoto.jpg",
+    image: kyoto,
     description:
       "Walk beneath clouds of pink sakura, explore ancient temples and experience the timeless beauty of Kyoto.",
     bestTime: "March — April",
@@ -18,7 +29,7 @@ const places = [
     country: "Japan",
     category: "Mountains",
     season: "Spring — Autumn",
-    image: "/src/assets/images/mount-fuji.jpg",
+    image: mountFuji,
     description:
       "See Japan's iconic mountain rising above peaceful lakes, forests and traditional villages.",
     bestTime: "Spring — Autumn",
@@ -31,7 +42,7 @@ const places = [
     country: "Greece",
     category: "Coastal",
     season: "May — Oct",
-    image: "/src/assets/images/santorini.jpg",
+    image: santorini,
     description:
       "Whitewashed villages, blue domes and spectacular sunsets overlooking the Aegean Sea.",
     bestTime: "May — October",
@@ -44,7 +55,7 @@ const places = [
     country: "Switzerland",
     category: "Mountains",
     season: "All Year",
-    image: "/src/assets/images/swiss-alps.jpg",
+    image: swissAlps,
     description:
       "A world of snow-covered peaks, peaceful valleys and breathtaking alpine landscapes.",
     bestTime: "All Year",
@@ -57,7 +68,7 @@ const places = [
     country: "France",
     category: "City",
     season: "Apr — Jun",
-    image: "/src/assets/images/paris.jpg",
+    image: paris,
     description:
       "Experience timeless architecture, beautiful streets and the unmistakable atmosphere of Paris.",
     bestTime: "April — June",
@@ -70,7 +81,7 @@ const places = [
     country: "Indonesia",
     category: "Tropical",
     season: "Apr — Oct",
-    image: "/src/assets/images/bali.jpg",
+    image: bali,
     description:
       "Tropical forests, rice terraces, beaches and peaceful temples make Bali unforgettable.",
     bestTime: "April — October",
@@ -83,7 +94,7 @@ const places = [
     country: "Türkiye",
     category: "Adventure",
     season: "Apr — Jun",
-    image: "/src/assets/images/cappadocia.jpg",
+    image: cappadocia,
     description:
       "Watch hundreds of hot-air balloons rise above a surreal landscape of valleys and rock formations.",
     bestTime: "April — June",
@@ -96,7 +107,7 @@ const places = [
     country: "USA",
     category: "City",
     season: "All Year",
-    image: "/src/assets/images/new-york.jpg",
+    image: newYork,
     description:
       "From skyline views to endless streets, New York is a city that never seems to stop moving.",
     bestTime: "All Year",
@@ -109,7 +120,7 @@ const places = [
     country: "Peru",
     category: "Heritage",
     season: "May — Sep",
-    image: "/src/assets/images/machu-picchu.jpg",
+    image: machuPicchu,
     description:
       "Discover the extraordinary ancient citadel surrounded by the mountains of Peru.",
     bestTime: "May — September",
@@ -122,7 +133,7 @@ const places = [
     country: "Italy",
     category: "Coastal",
     season: "May — Sep",
-    image: "/src/assets/images/amalfi-coast.jpg",
+    image: amalfiCoast,
     description:
       "Cliffside villages, turquoise water and winding coastal roads create an unforgettable Italian escape.",
     bestTime: "May — September",
